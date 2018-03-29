@@ -1,21 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package calculator;
+import java.util.Scanner;
 
-/**
- *
- * @author apple
- */
-public class Calculator {
+class calc {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        //initializes scanner
+        Scanner input = new Scanner(System.in);
+        System.out.println("Type your first number: "); 
+        double num = input.nextDouble();
+        
+        System.out.println("Type your second number: ");
+        double num2 = input.nextDouble();
+        
+        double answer = num + num2;
+        System.out.println("Your answer is " + answer + ".");
+        
     }
     
 }
